@@ -40,7 +40,7 @@
                         </a>
 
                         <a class="header__icon" href="#">
-                            <span class="lnr lnr-cart"></span>
+                            <span class="lnr lnr-cart header__cart"></span>
                             <span class="header__count header__count--cart">
                                 2
                             </span>
@@ -133,54 +133,56 @@
                         MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                     </div>
 
-                    <a class="search__inner-btn" href="#">
+                    <a class="search__inner-btn btn" href="#">
                         View All Products
                     </a>
 
-                    <a class="search__inner-btn" href="#">
-                        Popular Products
+                    <a class="search__inner-btn btn" href="#">
+                        Poplar Products
                     </a>
 
                     <form class="search__form">
                         <input class="search__form-input" type="text" placeholder="Search your products...">
 
-                        <select class="search__menu">
-                            <option class="search__menu-item" selected>
-                                All Categories
-                            </option>
+                        <div class="search__menu">
+                            <select class="search__menu-select">
+                                <option class="search__menu-item" selected>
+                                    All Categories
+                                </option>
 
-                            <option class="search__menu-item">
-                                Plugins
-                            </option>
+                                <option class="search__menu-item">
+                                    Plugins
+                                </option>
 
-                            <option class="search__menu-item">
-                                Wordpress
-                            </option>
+                                <option class="search__menu-item">
+                                    Wordpress
+                                </option>
 
-                            <option class="search__menu-item">
-                                Site Template
-                            </option>
+                                <option class="search__menu-item">
+                                    Site Template
+                                </option>
 
-                            <option class="search__menu-item">
-                                PSD Template
-                            </option>
+                                <option class="search__menu-item">
+                                    PSD Template
+                                </option>
 
-                            <option class="search__menu-item">
-                                Joomla
-                            </option>
+                                <option class="search__menu-item">
+                                    Joomla
+                                </option>
 
-                            <option class="search__menu-item">
-                                User Interface
-                            </option>
+                                <option class="search__menu-item">
+                                    User Interface
+                                </option>
 
-                            <option class="search__menu-item">
-                                Landing Page
-                            </option>
+                                <option class="search__menu-item">
+                                    Landing Page
+                                </option>
 
-                            <option class="search__menu-item">
-                                Software
-                            </option>
-                        </select>
+                                <option class="search__menu-item">
+                                    Software
+                                </option>
+                            </select>
+                        </div>
 
                         <button class="search__form-btn" type="button">
                             Search Now
@@ -247,56 +249,64 @@
                     <div class="weekly__slider">
 
                         <div class="weekly__item">
-                            <img class="weekly__img" src="images/content/wordpress.jpg" alt="Wordpress">
+                            <div class="weekly__item-box">
+                                <img class="weekly__item-img" src="images/content/wordpress.jpg" alt="wordpress">
+
+                                <div class="weekly__item-links">
+                                    <a class="weekly__item-link btn" href="#">
+                                        More Info
+                                    </a>
+                                    <a class="weekly__item-link btn" href="#">
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
 
                             <div class="weekly__box">
-                                <span class="weekly__title">
+                                <a class="weekly__title" href="#">
                                     One Page Resume Template
-                                </span>
+                                </a>
 
                                 <div class="weekly__company-box">
-                                    <a class="weekly__company-img" href="#" style="background-image: url(images/content/user-item.jpg);"></a>
+                                    <a class="weekly__company-img" href="#"
+                                        style="background-image: url(images/content/user-item.jpg);">
+                                    </a>
+
                                     <a class="weekly__company-name" href="#">
                                         AazzTech
                                     </a>
 
-                                    <span class="weekly__type-icon" style="background-image: url(images/icons/wordpress-icon.svg);"></span>
-
                                     <a class="weekly__type" href="#">
+                                        <span class="weekly__type-icon"
+                                            style="background-image: url(images/icons/wordpress-icon.svg);"></span>
                                         WordPress
                                     </a>
                                 </div>
 
-                                <p class="weekly__text">
+                                <p class="weekly__item-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                                     pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
 
-                                <a href="#" class="weekly__category">
-                                    website
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    plugin
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    landing page
-                                </a>
+                                <button class="weekly__category-btn" type="button">website</button>
+                                <button class="weekly__category-btn" type="button">plugin</button>
+                                <button class="weekly__category-btn" type="button">landing page</button>
 
-                                <div class="weekly__info">
+                                <div class="weekly__stats">
                                     <div class="weekly__counts">
-                                        <a href="#" class="weekly__prise">
+                                        <a href="#" class="weekly__price">
                                             $10 - $50
                                         </a>
 
-                                        <span class="lnr lnr-heart weekly__likes">
+                                        <span class="lnr lnr-heart">
                                             <span class="weekly__likes-count">
                                                 46
                                             </span>
                                         </span>
 
-                                        <span class="lnr lnr-cart weekly__amount">
+                                        <span class="lnr lnr-cart">
                                             <span class="weekly__amount-count">
                                                 634
                                             </span>
@@ -304,154 +314,666 @@
 
                                     </div>
 
-                                    <div class="weekly__rating-bar">
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating"></span>
+                                    <div class="rating-bar">
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="weekly__item">
-                            <img class="weekly__img" src="images/content/joomla.jpg" alt="Joomla">
+                            <div class="weekly__item-box">
+                                <img class="weekly__item-img" src="images/content/joomla.jpg" alt="joomla">
+
+                                <div class="weekly__item-links">
+                                    <a class="weekly__item-link btn" href="#">
+                                        More Info
+                                    </a>
+                                    <a class="weekly__item-link btn" href="#">
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
 
                             <div class="weekly__box">
-                                <span class="weekly__title">
+                                <a class="weekly__title" href="#">
                                     Two Page Resume Template
-                                </span>
+                                </a>
 
                                 <div class="weekly__company-box">
-                                    <a class="weekly__company-img" href="#" style="background-image: url(images/content/user-item.jpg);"></a>
+                                    <a class="weekly__company-img" href="#"
+                                        style="background-image: url(images/content/user-item.jpg);">
+                                    </a>
+
                                     <a class="weekly__company-name" href="#">
                                         AazzTech
                                     </a>
 
-                                    <span class="weekly__type-icon" style="background-image: url(images/icons/joomla-icon.svg);"></span>
                                     <a class="weekly__type" href="#">
+                                        <span class="weekly__type-icon"
+                                            style="background-image: url(images/icons/joomla-icon.svg);"></span>
                                         Joomla
                                     </a>
                                 </div>
 
-                                <p class="weekly__text">
+                                <p class="weekly__item-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                                     pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
 
-                                <a href="#" class="weekly__category">
-                                    website
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    plugin
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    landing page
-                                </a>
+                                <button class="weekly__category-btn" type="button">website</button>
+                                <button class="weekly__category-btn" type="button">plugin</button>
+                                <button class="weekly__category-btn" type="button">landing page</button>
 
-                                <div class="weekly__info">
+                                <div class="weekly__stats">
                                     <div class="weekly__counts">
-                                        <a href="#" class="weekly__prise">
-                                            $100 - $150
+                                        <a href="#" class="weekly__price">
+                                            $12 - $500
                                         </a>
 
-                                        <span class="lnr lnr-heart weekly__likes">
+                                        <span class="lnr lnr-heart">
                                             <span class="weekly__likes-count">
-                                                500
+                                                40
                                             </span>
                                         </span>
 
-                                        <span class="lnr lnr-cart weekly__amount">
+                                        <span class="lnr lnr-cart">
                                             <span class="weekly__amount-count">
-                                                4873
+                                                63
                                             </span>
                                         </span>
 
                                     </div>
 
-                                    <div class="weekly__rating-bar">
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
+                                    <div class="rating-bar">
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="weekly__item">
-                            <img class="weekly__img" src="images/content/pinterest.jpg" alt="Pinterest">
+                            <div class="weekly__item-box">
+                                <img class="weekly__item-img" src="images/content/pinterest.jpg" alt="pinterest">
+
+                                <div class="weekly__item-links">
+                                    <a class="weekly__item-link btn" href="#">
+                                        More Info
+                                    </a>
+                                    <a class="weekly__item-link btn" href="#">
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
 
                             <div class="weekly__box">
-                                <span class="weekly__title">
+                                <a class="weekly__title" href="#">
                                     Three Page Resume Template
-                                </span>
+                                </a>
 
                                 <div class="weekly__company-box">
-                                    <a class="weekly__company-img" href="#" style="background-image: url(images/content/user-item.jpg);"></a>
+                                    <a class="weekly__company-img" href="#"
+                                        style="background-image: url(images/content/user-item.jpg);">
+                                    </a>
+
                                     <a class="weekly__company-name" href="#">
                                         AazzTech
                                     </a>
 
-                                    <span class="weekly__type-icon" style="background-image: url(images/icons/pinterest-icon.svg);"></span>
                                     <a class="weekly__type" href="#">
+                                        <span class="weekly__type-icon"
+                                            style="background-image: url(images/icons/pinterest-icon.svg);"></span>
                                         Pinterest
                                     </a>
                                 </div>
 
-                                <p class="weekly__text">
+                                <p class="weekly__item-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                                     pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
 
-                                <a href="#" class="weekly__category">
-                                    website
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    plugin
-                                </a>
-                                <a href="#" class="weekly__category">
-                                    landing page
-                                </a>
+                                <button class="weekly__category-btn" type="button">website</button>
+                                <button class="weekly__category-btn" type="button">plugin</button>
+                                <button class="weekly__category-btn" type="button">landing page</button>
 
-                                <div class="weekly__info">
+                                <div class="weekly__stats">
                                     <div class="weekly__counts">
-                                        <a href="#" class="weekly__prise">
-                                            $1000 - $1500
+                                        <a href="#" class="weekly__price">
+                                            $100 - $500
                                         </a>
 
-                                        <span class="lnr lnr-heart weekly__likes">
+                                        <span class="lnr lnr-heart">
                                             <span class="weekly__likes-count">
-                                                5007
+                                                460
                                             </span>
                                         </span>
 
-                                        <span class="lnr lnr-cart weekly__amount">
+                                        <span class="lnr lnr-cart">
                                             <span class="weekly__amount-count">
-                                                4454
+                                                6534
                                             </span>
                                         </span>
 
                                     </div>
 
-                                    <div class="weekly__rating-bar">
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
-                                        <span class="weekly__rating weekly__rating--active"></span>
+                                    <div class="rating-bar">
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating rating--active"></span>
+                                        <span class="rating"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+
+                <div class="products__top">
+                    <div class="products__title">
+                        Newest Release Products
+                    </div>
+
+                    <div class="products__filter">
+                        Filter by:
+
+                        <ul class="products__filter-menu">
+                            <li class="products__filter-item">
+                                <button class="products__filter-btn" type="button" data-filter=".plugins">
+                                    Trending items
+                                </button>
+                            </li>
+                            <li class="products__filter-item">
+                                <button class="products__filter-btn" type="button" data-filter=".wordpress">
+                                    Best seller
+                                </button>
+                            </li>
+                            <li class="products__filter-item">
+                                <button class="products__filter-btn" type="button" data-filter=".site">
+                                    Best rating
+                                </button>
+                            </li>
+                            <li class="products__filter-item">
+                                <button class="products__filter-btn" type="button" data-filter=".psd">
+                                    Low price
+                                </button>
+                            </li>
+                            <li class="products__filter-item">
+                                <button class="products__filter-btn" type="button" data-filter=".joomla">
+                                    High price
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="products__categories">
+                    <button class="products__btn" type="button" data-filter=".plugins">
+                        Plugins
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".wordpress">
+                        WordPress
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".site">
+                        Site Template
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".psd">
+                        PSD Template
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".joomla">
+                        Joomla
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".user">
+                        User Interface
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".landing">
+                        Landing Page
+                    </button>
+                    <button class="products__btn" type="button" data-filter=".software">
+                        Software
+                    </button>
+                </div>
+
+                <div class="product">
+
+                    <div class="product__item mix plugins">
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/plugins.jpg" alt="plugins">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);">
+                                </a>
+
+                                <a class="product__company-name" href="#">
+                                    Theme-Valley
+                                </a>
+
+                                <a href="#" class="product__type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/plugin.svg);"></span>
+                                    Plugin
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $20
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        50
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        445
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__item mix wordpress">
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/wordpress.jpg" alt="wordpress">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);"></a>
+                                <a class="product__company-name" href="#">
+                                    Echo Theme
+                                </a>
+
+                                <a href="#" class="product__type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/wordpress-icon.svg);"></span>
+                                    WordPress
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $10
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        48
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        50
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__item mix site">
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/template.jpg" alt="template">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                Bryson - Portfolio Template
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);">
+                                </a>
+
+                                <a class="product__company-name" href="#">
+                                    Artconer
+                                </a>
+
+                                <a href="#" class="product__type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/site.svg);"></span>
+                                    Site Template
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $10
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        56
+                                    </span>
+                                </span>
+
+                                <div class="rating-bar">
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating"></span>
+                                </div>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        68
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__item mix psd">
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/psd.jpg" alt="psd">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                Shopping Lite
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);">
+                                </a>
+
+                                <a class="product__company-name" href="#">
+                                    Design-Hub
+                                </a>
+
+                                <a href="#" class="product__type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/psd-icon.svg);"></span>
+                                    PSD
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $20-50
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        90
+                                    </span>
+                                </span>
+
+                                <div class="rating-bar">
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating"></span>
+                                </div>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        44
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__item mix joomla">
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/joomla.jpg" alt="joomla">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                Marketify Shoop
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);">
+                                </a>
+
+                                <a class="product__company-name" href="#">
+                                    Artcorner
+                                </a>
+
+                                <a href="#" class="product__type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/joomla-icon.svg);"></span>
+                                    Joomja
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $20
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        50
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        445
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__item mix wordpress">
+
+                        <div class="product__item-box">
+                            <img class="product__item-img" src="images/content/wordpress-2.jpg" alt="wordpress-2">
+
+                            <div class="product__item-links">
+                                <a class="product__item-link btn" href="#">
+                                    More Info
+                                </a>
+                                <a class="product__item-link btn" href="#">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__item-content">
+
+                            <a class="product__item-title" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+
+                            <div class="product__company-box">
+                                <a class="product__company-img" href="#"
+                                    style="background-image: url(images/content/user-item.jpg);">
+                                </a>
+
+                                <a class="product__company-name" href="#">
+                                    EchoTheme
+                                </a>
+
+                                <a href="#" class="product__type type">
+                                    <span class="product__type-icon"
+                                        style="background-image: url(images/icons/wordpress-icon.svg);"></span>
+                                    WordPress
+                                </a>
+                            </div>
+
+                            <p class="product__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </p>
+                        </div>
+
+                        <div class="product__item-stats">
+                            <div class="product__item-counts">
+                                <a href="#" class="product__item-price">
+                                    $200
+                                </a>
+
+                                <span class="lnr lnr-heart">
+                                    <span class="product__likes-count">
+                                        58
+                                    </span>
+                                </span>
+
+                                <div class="rating-bar">
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating rating--active"></span>
+                                    <span class="rating"></span>
+                                    <span class="rating"></span>
+                                </div>
+                            </div>
+
+                            <div class="product__item-quantity">
+                                <span class="lnr lnr-cart cart">
+                                    <span class="product__amount-count">
+                                        94
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="products__buttom">
+                    <button class="products__buttom-btn btn" type="button" data-filter="all">
+                        All New Products
+                    </button>
                 </div>
             </div>
         </section>
