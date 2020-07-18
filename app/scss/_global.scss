@@ -24,6 +24,10 @@ a {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+
+    &--fluid {
+        max-width: 1980px;
+    }
 }
 
 .rate-star {

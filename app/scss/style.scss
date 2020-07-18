@@ -1067,7 +1067,7 @@
     }
 
     .lnr {
-        font-size: 60px; 
+        font-size: 60px;
         margin-bottom: 22px;
     }
 
@@ -1118,4 +1118,91 @@
 
 //------------About end-----------------------
 
-//------------start--------------------------
+//------------Sell & Buy start----------------
+
+.sell-buy {
+    text-align: center;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 94px 20px 102px;
+        width: 50%;
+        background-color: #7347c1;
+        background-image: url(../images/bg-waves.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        color: #fff;
+
+        &--blue {
+            background-color: $blue;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+
+    &__icon {
+        width: 120px;
+        height: 110px;
+        margin-bottom: 35px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 18px;
+        max-width: 550px;
+        font-size: 36px;
+        max-height: 80px;
+        overflow: hidden;
+    }
+
+    &__text {
+        margin: 0 auto;
+        margin-bottom: 43px;
+        line-height: 30px;
+        max-width: 600px;
+    }
+
+    &__btn {
+        min-width: 188px;
+        padding: 18px 10px;
+        display: inline-block;
+        color: #7347c1;
+        background-color: #fff;
+        border-radius: 28px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.5s, color 0.5s;
+        outline: transparent;
+
+        &:hover    {
+            background-color: #7347c1;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        &--blue {
+            color: $blue;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+
+        &:focus {
+            background-color: #d9dfe5;
+            border: 1px solid #000;
+        }
+    }
+}
+
+//------------Sell & Buy end------------------
+
+//------------start----------------
