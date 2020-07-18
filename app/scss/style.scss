@@ -3,6 +3,7 @@
 @import 'linearicons';
 @import 'global';
 
+//------------Header start-------------------
 
 .header {
     &__top {
@@ -147,7 +148,7 @@
     }
 
     &__menu-search {
-        max-width: 358px;
+        width: 31%;
         position: relative;
     }
 
@@ -194,6 +195,10 @@
     }
 }
 
+//------------Header end---------------------
+
+//------------Search start-------------------
+
 .search {
     background-image: linear-gradient(270deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
 
@@ -218,7 +223,7 @@
 
     &__inner-text {
         margin-bottom: 68px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 20px;
     }
 
@@ -358,6 +363,10 @@
     }
 }
 
+//------------Search end-----------------------
+
+//------------Features start-------------------
+
 .features {
 
     &__inner {
@@ -399,6 +408,10 @@
     }
 }
 
+//------------Features end-------------------
+
+//------------Weekly start-------------------
+
 .weekly {
     background-color: $grey-bg;
 
@@ -406,17 +419,17 @@
         padding: 119px 0;
         border-radius: 7px;
     }
+}
 
-    &__top {
-        margin-bottom: 50px;
-        background-color: #fff;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-        padding: 33px 30px;
-        border-radius: 4px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.top-box {
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 33px 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__title {
         font-size: 30px;
@@ -424,6 +437,11 @@
 
     &__arrows {
         border-radius: 23px;
+    }
+
+    &__slider {
+        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+        height: 450px;
     }
 
     .slick-arrow {
@@ -452,68 +470,244 @@
             border-radius: 0px 30px 30px 0;
         }
     }
+}
 
-    &__slider {
-        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+.product-item {
+    display: flex !important;
+    justify-content: space-between;
+
+    &:hover .product-item__links {
+        height: 100%;
     }
 
-    .product {
-        display: flex !important;
-        justify-content: space-between;
+    &__img {
+        max-width: 557px;
         height: 450px;
-        margin: 0;
+        border-radius: 4px 0 0 4px;
+        object-fit: cover;
+        display: block;
+    }
 
-        &__img {
-            max-width: 557px;
-            min-height: 450px;
-            border-radius: 4px 0 0 4px;
+    &__box {
+        position: relative;
+    }
+
+    &__links {
+        display: block;
+        width: 100%;
+        height: 0;
+        background-image: linear-gradient(270deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px 0 0 4px;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    &__link {
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 13px 31px;
+        border-radius: 25px;
+        transition: background-color 0.3s, color 0.3s;
+        outline: transparent;
+
+        &+& {
+            margin-left: 10px;
         }
 
-        &__links {
-            border-radius: 4px 0 0 4px;
+        &:hover,
+        &:active {
+            background-color: #fff;
+            color: $blue;
         }
 
-        &__inner {
-            max-width: 583px;
-            padding: 44px 40px 0px 49px;
-            border-radius: 0 4px 4px 0;
+        &:focus {
+            border: 2px solid #000;
+        }
+    }
+
+    &__inner {
+        max-width: 583px;
+        padding: 26px 40px 0px 49px;
+        border-radius: 0 4px 4px 0;
+        background-color: #fff;
+    }
+
+    &__title {
+        height: 64px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+        display: flex;
+        align-items: center;
+        transition: color 0.3s;
+        overflow: hidden;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__company-box,
+    &__company-link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__company-box {
+        margin-bottom: 24px;
+    }
+
+    &__company-img {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    &__company-name {
+        font-size: 15px;
+        color: #000;
+        margin-right: 20px;
+        transition: color 0.3s;
+
+        &:hover,
+        &:active {
+            color: $blue;
+        }
+    }
+
+    &__type {
+        position: relative;
+        padding-left: 24px;
+        transition: color 0.3s;
+
+        &:hover,
+        &:active {
+            color: #ff6a6c;
+        }
+    }
+
+    &__type-icon {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        line-height: 30px;
+        color: #555555;
+        overflow: scroll;
+        margin-bottom: 14px;
+        max-height: 140px;
+
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            width: 5px;
+
         }
 
-        &__title {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        &__text {
-            max-height: 140px;
-            margin-bottom: 14px;
-        }
-
-        &__category-btns {
-            padding: 5px 0 38px;
-            display: flex;
-            flex-wrap: wrap;
-            max-height: 77px;
-        }
-
-        &__stats {
-            padding: 28px 0;
-            border-radius: 0;
-        }
-
-        &__price {
+        &::-webkit-scrollbar-thumb {
             background-color: $blue;
-            color: #fff;
-            margin-right: 10px;
+            border-radius: 30%;
         }
     }
 }
 
+.categories {
+    padding: 5px 0 38px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 77px;
+
+    &__btn {
+        padding: 4px 16px;
+        border: none;
+        margin-right: 4px;
+        margin-bottom: 10px;
+        background-color: #f1f3f6;
+        color: #868c96;
+        border-radius: 18px;
+        transition: background-color 0.5s, color 0.5s;
+        cursor: pointer;
+        outline: transparent;
+
+        &:hover,
+        &:active {
+            background-color: $blue;
+            color: #fff;
+        }
+
+        &:focus {
+            border: 2px solid #000;
+        }
+    }
+}
+
+.stats {
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ececec;
+    font-size: 15px;
+    background-color: #fff;
+
+    &__price {
+        margin-right: 10px;
+        padding: 7px 19px;
+        border-radius: 18px;
+        font-weight: 500;
+        background-color: $blue;
+        color: #fff;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        padding: 0 10px;
+        cursor: pointer;
+        outline: transparent;
+        transition: color 0.3s;
+
+        &:hover,
+        &:hover .lnr-heart,
+        &:active {
+            color: #ff6a6c;
+        }
+
+        &:focus {
+            border: 2px solid #000;
+        }
+
+        &--blue {
+            color: $blue;
+            margin-right: 5px;
+        }
+    }
+}
+
+//------------Weekly end-------------------
+
+//------------Products start---------------
+
 .products {
     background-color: #f6f7fb;
-    padding-top: 120px;
+    padding: 120px 0; 
+    
 
-    &__top {
+    .top-box {
         margin-bottom: 27px;
         display: flex;
         justify-content: space-between;
@@ -521,113 +715,159 @@
         background-color: #fff;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
-    }
 
-    &__title {
-        padding: 39px 30px;
-        font-size: 30px;
-    }
+        &__title {
+            padding: 6px 0;
+            font-size: 30px;
+        }
 
-    &__filter-box {
-        position: relative;
-    }
+        &__filter {
+            position: relative;
+        }
 
-    &__filter {
-        border: none;
-        background-color: transparent;
-        margin-right: 29px;
-        position: relative;
-        font-size: 16px;
-        color: #747b86;
-        cursor: pointer;
-        padding-right: 29px;
-        outline: transparent;
-        transition: color 0.3s;
+        &__filter-btn {
+            border: none;
+            background-color: transparent;
+            position: relative;
+            font-size: 16px;
+            color: #747b86;
+            cursor: pointer;
+            padding-right: 29px;
+            outline: transparent;
+            transition: color 0.3s;
 
-        &::after {
-            content: '';
-            width: 8px;
-            height: 20px;
-            display: block;
+            &::after {
+                content: '';
+                width: 8px;
+                height: 20px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-image: url(../images/icons/filter-icon.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:hover,
+            &:active {
+                color: $blue;
+            }
+
+            &:focus {
+                border: 2px solid #000;
+            }
+        }
+
+        &__filter-menu {
+            min-width: 184px;
+            margin: 0;
+            padding: 10px 0;
+            display: none;
             position: absolute;
-            top: 0;
-            right: 0;
-            background-image: url(../images/icons/filter-icon.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            right: 10px;
+            top: 50px;
+            list-style: none;
+            background-color: #fff;
+            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            z-index: 5;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 13px;
+                position: absolute;
+                top: -14px;
+                right: 17px;
+                border-style: solid;
+                border-width: 0 6.5px 14px 6.5px;
+                border-color: transparent transparent #fff transparent;
+            }
         }
 
-        &:hover,
-        &:active {
-            color: $blue;
-        }
-
-        &:focus {
-            border: 2px solid #000;
-        }
-    }
-
-    &__filter-menu {
-        min-width: 184px;
-        margin: 0;
-        padding: 10px 0;
-        display: none;
-        position: absolute;
-        right: 10px;
-        top: 50px;
-        list-style: none;
-        background-color: #fff;
-        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-        z-index: 5;
-
-        &::after {
-            content: '';
+        &__filter-link {
+            width: 100%;
+            border: none;
+            margin: 0;
+            padding: 7px 25px;
+            background-color: #fff;
+            font-size: 15px;
             display: block;
-            width: 13px;
-            position: absolute;
-            top: -14px;
-            right: 17px;
-            border-style: solid;
-            border-width: 0 6.5px 14px 6.5px;
-            border-color: transparent transparent #fff transparent;
+            color: #747b86;
+            cursor: pointer;
+            text-align: start;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $blue;
+            }
         }
     }
 
-    &__filter-btn {
-        width: 100%;
-        border: none;
-        margin: 0;
-        padding: 7px 25px;
-        background-color: #fff;
-        font-size: 15px;
-        display: block;
-        color: #747b86;
-        cursor: pointer;
-        text-align: start;
-        transition: color 0.3s;
-
-        &:hover {
-            color: $blue;
-        }
-    }
-
-    &__categories {
+    .categories {
+        max-height: 200px;
         margin-bottom: 51px;
-        padding: 30px 32px 20px;
+        padding: 30px 23px 23px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
         background-color: #fff;
+
+        &__btn {
+            margin-left: 6px;
+            padding: 6px 17px;
+        }
     }
 
     &__inner {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    &__btn {
-        padding: 8px 20px;
+    .product-item {
+        flex-direction: column;
+        width: 32%;
+        border-radius: 4px;
+        margin-bottom: 34px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+        &__img {
+            width: 100%;
+            height: 230px;
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__links {
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__inner {
+            padding: 10px 30px 14px;
+        }
+
+        &__title {
+            max-width: 300px;
+            height: 55px;
+            font-size: 20px;
+        }
+
+        &__text {
+            max-height: 107px;
+            margin: 0;
+        }
+    }
+
+    .stats {
+        padding: 19px 14px 19px 31px;
+        border-radius: 0 0 4px 4px;
+
+        &__price {
+            background-color: #e6f1fd;
+            color: $blue;
+            margin-right: 0;
+            padding: 6px 13px;
+        }
     }
 
     &__buttom {
@@ -635,30 +875,32 @@
     }
 
     &__buttom-btn {
-        color: #fff;
-        border-radius: 27px;
-        padding: 18px 34px;
-        margin-bottom: 119px;
-        background-color: $blue;
         display: inline-block;
-        outline: transparent;
+        background-color: $blue;
+        color: #fff;
+        padding: 18px 30px;
+        border-radius: 28px;
         transition: background-color 0.3s, color 0.3s;
-        cursor: pointer;
+        outline: transparent;
 
         &:hover,
         &:active {
-            background-color: #d9dfe5;
+            background-color: #e6f1fd;
             color: $blue;
         }
 
         &:focus {
             border: 2px solid #000;
-        }
-    }
-
-    .product {
-        &__category-btn {
-            padding: 7px 17px;
-        }
+        } 
     }
 }
+
+//------------Products end-----------------------
+
+//------------Followers start--------------------
+
+
+
+//------------Followers end-----------------------
+
+//------------ start--------------------
