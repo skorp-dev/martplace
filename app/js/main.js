@@ -7,6 +7,15 @@ $(function () {
         appendArrows: '.top-box__arrows'
     });
 
+    $('.follower__slider').slick({
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+        appendArrows: '.follower__arrows',
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
     var mixer = mixitup('.products__inner');
 
 
