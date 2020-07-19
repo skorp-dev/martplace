@@ -16,6 +16,14 @@ $(function () {
         slidesToScroll: 3
     });
 
+    $('.feedback__slider').slick({
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
+        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
+        slidesToShow: 2,
+        appendArrows: '.feedback__arrows'
+    });
+
     var mixer = mixitup('.products__inner');
 
 
