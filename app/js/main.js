@@ -38,7 +38,7 @@ $(function () {
     });
 
     $(".rate-star").rateYo({
-        starWidth: "17px",
+        starWidth: "13px",
         spacing: "5px",
         ratedFill: "#ffc000",
         readOnly: true

@@ -206,7 +206,6 @@
 
     &__inner {
         position: relative;
-        margin-bottom: 184px;
         text-align: center;
         color: #fff;
     }
@@ -371,17 +370,17 @@
 //------------Features start-------------------
 
 .features {
+    padding: 184px 0 122px;
 
     &__inner {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 118px;
     }
 
     &__item {
         width: 32%;
-        padding: 30px;
+        padding: 30px 30px 9px;
         padding-top: 42px;
         transition: box-shadow 0.5s;
 
@@ -407,7 +406,6 @@
     &__item-text {
         padding-top: 6px;
         font-size: 16px;
-        line-height: 30px;
     }
 }
 
@@ -536,21 +534,21 @@
 
     &__inner {
         max-width: 583px;
-        padding: 26px 40px 0px 49px;
+        padding: 46px 40px 0px 49px;
         border-radius: 0 4px 4px 0;
         background-color: #fff;
     }
 
     &__title {
-        height: 64px;
+        max-height: 30px;
+        margin-bottom: 10px;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
         color: #000;
-        display: flex;
-        align-items: center;
+        display: inline-block;
         transition: color 0.3s;
         overflow: hidden;
-
+    
         &:hover {
             color: $blue;
         }
@@ -606,22 +604,8 @@
     }
 
     &__text {
-        line-height: 30px;
-        color: #555555;
-        overflow: scroll;
         margin-bottom: 14px;
         max-height: 140px;
-
-        &::-webkit-scrollbar {
-            background-color: transparent;
-            width: 5px;
-
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: $blue;
-            border-radius: 30%;
-        }
     }
 }
 
@@ -829,7 +813,7 @@
         flex-direction: column;
         width: 32%;
         border-radius: 4px;
-        margin-bottom: 34px;
+        margin-bottom: 29px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 
         &__img {
@@ -843,13 +827,14 @@
         }
 
         &__inner {
-            padding: 10px 30px 14px;
+            padding: 26px 30px 14px;
         }
 
         &__title {
             max-width: 300px;
-            height: 55px;
+            max-height: 25px;
             font-size: 20px;
+            margin-bottom: 14px;
         }
 
         &__text {
@@ -859,7 +844,7 @@
     }
 
     .stats {
-        padding: 19px 14px 19px 31px;
+        padding: 23px 14px 19px 31px;
         border-radius: 0 0 4px 4px;
 
         &__price {
@@ -900,7 +885,7 @@
 //------------Followers start--------------------
 .follower {
     background-color: $grey-bg;
-    padding: 120px 0 91px;
+    padding: 123px 0 81px;
 
     .slick-arrow {
         background-color: $blue;
@@ -929,12 +914,11 @@
         }
 
         &__inner {
-            padding: 10px 30px 14px;
+            padding: 25px 30px 14px;
         }
 
         &__title {
             max-width: 300px;
-            height: 55px;
             font-size: 20px;
         }
 
@@ -949,7 +933,7 @@
     }
 
     .stats {
-        padding: 19px 14px 19px 31px;
+        padding: 22px 14px 22px 31px;
         border-radius: 0 0 4px 4px;
 
         &__price {
@@ -1048,22 +1032,8 @@
     }
 
     &__item-text {
-        color: #555;
-        line-height: 30px;
-        overflow: scroll;
         max-height: 140px;
         margin-top: 0;
-
-        &::-webkit-scrollbar {
-            background-color: transparent;
-            width: 5px;
-
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: $blue;
-            border-radius: 30%;
-        }
     }
 
     .lnr {
@@ -1209,7 +1179,7 @@
 //------------Feedback start------------------
 
 .feedback {
-    padding: 112px 0 96px;
+    padding: 112px 0 121px;
 
     &__item {
         padding: 51px 36px 11px;
@@ -1332,23 +1302,90 @@
 
     &__item-text {
         max-height: 140px;
-        color: #555;
-        line-height: 30px;
-        overflow: scroll;
-
-        &::-webkit-scrollbar {
-            background-color: transparent;
-            width: 5px;
-
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: $blue;
-            border-radius: 30%;
-        }
     }
 }
 
 //------------Feedback end------------------
+
+//------------Blog start--------------------
+
+.blog {
+    padding: 113px 0 88px;
+    background-color: #eff1f5;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .product-item {
+        flex-direction: column;
+        max-width: 360px;
+        margin-bottom: 34px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+          
+        &__img {
+            width: 100%;
+            height: 230px;
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__links {
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__inner {
+            padding: 27px 29px 14px;
+            height: 188px;
+        }
+
+        &__title {
+            max-width: 306px;
+            max-height: 55px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 19px;
+            overflow: hidden;
+        }
+
+        &__text {
+            max-height: 107px;
+            margin: 0;
+        }
+    }
+
+    .stats {
+        padding: 8px 22px 11px;
+        border-radius: 0 0 4px 4px;
+
+        &__features {
+            padding: 9px 0 9px 7px;
+            width: 50%;
+            font-size: 15px;
+            border-right: 1px solid #ececec;
+            color: #999;
+        }
+
+        &__btn {
+            color: #7e7e7e;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #ff6a6c;
+            }
+        }
+
+        .lnr-clock {
+            color: $blue;
+        }
+
+        .lnr-eye {
+            margin-left: 10px;
+        }
+    }
+}
+
+//------------Blog end------------------
 
 //------------ start----------------

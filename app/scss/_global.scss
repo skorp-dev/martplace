@@ -38,6 +38,23 @@ a {
     }
 }
 
+.text {
+    line-height: 30px;
+    color: #555555;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 5px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 30%;
+    }
+}
+
 .lnr-heart {
     color: #7347c1;
 }
