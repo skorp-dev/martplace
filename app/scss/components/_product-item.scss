@@ -150,6 +150,7 @@
         border-top: 1px solid #ececec;
         font-size: 15px;
         border-radius: 0 0 4px 4px;
+        color: #7e7e7e;
     }
 
     &__stats-price {
@@ -164,6 +165,8 @@
 
     &__stats-btn {
         padding: 0;
+        font-size: 15px;
+        color: #7e7e7e;
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -192,7 +195,6 @@
     }
 
     &__stats-time {
-        font-size: 15px;
         margin-left: 5px;
     }
 }

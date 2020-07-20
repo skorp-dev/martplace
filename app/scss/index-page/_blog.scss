@@ -29,12 +29,19 @@
             padding: 0 28px;
         }
 
+        &__stats-features-right {
+            width: 50%;
+            border-left: 1px solid #ececec;
+            line-height: 40px;
+            text-align: end;
+        }
+
         .lnr-clock {
             color: $blue;
         }
 
         .lnr-eye {
-            margin-left: 33px;
+           margin-left: 33px;
         }
     }
 }
