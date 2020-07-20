@@ -10,7 +10,7 @@ html {
 
 
 body {
-    font-family: 'Quicksand-Regular', 'Linearicons-Free', sans-serif;
+    font-family: 'Quicksand', 'Linearicons-Free', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -53,14 +53,4 @@ a {
         background-color: $blue;
         border-radius: 30%;
     }
-}
-
-.lnr-heart {
-    color: #7347c1;
-}
-
-.mixitup-control-active {
-    background-color: $blue;
-    color: #fff;
-    outline: transparent;
 }

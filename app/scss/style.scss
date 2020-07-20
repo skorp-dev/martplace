@@ -42,8 +42,7 @@
         }
 
         &:focus {
-            background-color: #2539e9;
-            border: 1px solid #000;
+            background-color: #025fda;
         }
     }
 
@@ -137,7 +136,7 @@
 
     &__menu-link {
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 500;
         color: #333;
         transition: color 0.3s;
     }
@@ -147,13 +146,13 @@
     &:active {
         color: $blue;
     }
+}
 
-    &__menu-search {
-        width: 31%;
-        position: relative;
-    }
+.search-form {
+    width: 31%;
+    position: relative;
 
-    &__menu-input {
+    &__input {
         width: 100%;
         padding: 13px 80px 13px 23px;
         display: block;
@@ -171,7 +170,7 @@
         }
     }
 
-    &__menu-btn {
+    &__btn {
         position: absolute;
         right: 0;
         top: 0;
@@ -191,8 +190,7 @@
         }
 
         &:focus {
-            background-color: #2539e9;
-            border: 1px solid #000;
+            background-color: #025fda;
         }
     }
 }
@@ -359,7 +357,7 @@
         }
 
         &:focus {
-            background-color: #2539e9;
+            background-color: #025fda;
             border: 1px solid #000;
         }
     }
@@ -400,7 +398,6 @@
 
     &__item-title {
         font-size: 24px;
-        font-weight: 500;
     }
 
     &__item-text {
@@ -419,6 +416,10 @@
     &__inner {
         padding: 119px 0;
         border-radius: 7px;
+    }
+
+    .product-item {
+        display: flex !important;
     }
 }
 
@@ -471,8 +472,11 @@
 }
 
 .product-item {
-    display: flex !important;
     justify-content: space-between;
+
+    .lnr-heart {
+        color: #7347c1;
+    }
 
     &:hover .product-item__links {
         height: 100%;
@@ -543,7 +547,7 @@
         max-height: 30px;
         margin-bottom: 10px;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 500;
         color: #000;
         display: inline-block;
         transition: color 0.3s;
@@ -677,7 +681,6 @@
 
         &--blue {
             color: $blue;
-            margin-right: 5px;
         }
     }
 }
@@ -802,11 +805,17 @@
         }
     }
 
+    .mixitup-control-active {
+        background-color: $blue;
+        color: #fff;
+        outline: transparent;
+    }
+
     &__inner {
-        margin-bottom: 27px;
+        margin-bottom: 31px;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .product-item {
@@ -827,7 +836,7 @@
         }
 
         &__inner {
-            padding: 26px 30px 14px;
+            padding: 26px 30px 9px;
         }
 
         &__title {
@@ -844,14 +853,26 @@
     }
 
     .stats {
-        padding: 23px 14px 19px 31px;
+        padding: 0 18px 0 36px;
         border-radius: 0 0 4px 4px;
+        height: 63px;
 
         &__price {
             background-color: #e6f1fd;
             color: $blue;
-            margin-right: 0;
+            margin-right: 12px;
             padding: 6px 13px;
+            display: inline-block;
+        }
+
+        &__features {
+            max-width: 250px;
+            max-height: 30px;
+            overflow: hidden;
+        }
+
+        &__btn{
+            padding: 0;
         }
     }
 }
@@ -876,6 +897,7 @@
 
         &:focus {
             border: 1px solid #000;
+            background-color: #025fda;
         }
     }
 }
@@ -885,7 +907,7 @@
 //------------Followers start--------------------
 .follower {
     background-color: $grey-bg;
-    padding: 123px 0 81px;
+    padding: 123px 0 78px;
 
     .slick-arrow {
         background-color: $blue;
@@ -933,14 +955,26 @@
     }
 
     .stats {
-        padding: 22px 14px 22px 31px;
+        padding: 0 18px 0 36px;
         border-radius: 0 0 4px 4px;
+        height: 63px;
 
         &__price {
             background-color: #e6f1fd;
             color: $blue;
-            margin-right: 0;
+            margin-right: 12px;
             padding: 6px 13px;
+            display: inline-block;
+        }
+
+        &__features {
+            max-width: 250px;
+            max-height: 30px;
+            overflow: hidden;
+        }
+
+        &__btn{
+            padding: 0;
         }
     }
 }
@@ -995,7 +1029,7 @@
 //------------About start--------------------------
 
 .about {
-    padding: 112px 0 96px;
+    padding: 113px 0 95px;
 
     &__inner {
         display: flex;
@@ -1344,7 +1378,6 @@
             max-width: 306px;
             max-height: 55px;
             font-size: 22px;
-            font-weight: 600;
             margin-bottom: 19px;
             overflow: hidden;
         }
@@ -1404,9 +1437,9 @@
         align-items: center;
 
         &+& {
-            border-left: 1px solid  #e8eaf3;
+            border-left: 1px solid #e8eaf3;
         }
-    } 
+    }
 
     &__img {
         width: 155px;
@@ -1434,13 +1467,13 @@
 
 .banner {
     text-align: center;
-    padding: 107px;
-    background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    padding: 106px 0 111px;
+    background-image: linear-gradient(270deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
 
-    &__title{
-        font-size: 32px;
+    &__title {
+        font-size: 36px;
         color: #fff;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
 
     &__text {
@@ -1470,7 +1503,192 @@
         }
     }
 }
-  
-//------------Banner end------------------
 
-//------------start-----------------
+//------------Banner end-------------------
+
+//------------Footer start-----------------
+
+.footer {
+
+    &__top {
+        background-color: #262b30;
+    }
+
+    &__inner {
+        padding: 115px 0 112px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        min-width: 250px;
+        color: #ababab;
+
+        &--large {
+            min-width: 360px;
+        }
+
+        &--small {
+            min-width: 200px;
+            margin-left: 42px;
+        }
+    }
+
+    &__title {
+        padding-top: 5px;
+        font-size: 18px;
+        line-height: 38px;
+        color: #fff;
+    }
+
+    &__text {
+        padding-top: 9px;
+        max-width: 269px;
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 18px;
+
+        &--large {
+            max-width: 345px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__contact {
+        max-width: 250px;
+        display: inline-block;
+        color: #ababab;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 26px;
+        transition: color 0.3s;
+
+        &+& {
+            margin-top: 6px;
+        }
+
+        &--nav {
+            display: flex;
+            align-items: center;
+        }
+
+        &:hover,
+        &:active {
+            color: #fff;
+        }
+    }
+
+    &__list,
+    &__icons {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list-link {
+        color: #ababab;
+        font-size: 15px;
+        line-height: 32px;
+        transition: color 0.3s;
+
+        &:hover,
+        &:active {
+            color: #fff;
+        }
+    }
+
+    &__icons,
+    &__icons-item {
+        display: inline;
+    }
+
+    &__icons-item {
+        &+& {
+            margin-left: 8px;
+        }
+    }
+
+    &__icon-link {
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $blue;
+        }
+
+        &--low-blue {
+            background-color: #395799;
+        }
+
+        &--blue {
+            background-color: #19b2f5;
+        }
+
+        &--orange {
+            background-color: #f05b44;
+        }
+
+        &--red {
+            background-color: #9c0c1c;
+        }
+
+        &--hgt-blue {
+            background-color: #0da6be;
+        }
+
+        &--lilac {
+            background-color: #ea4c89;
+        }
+    }
+
+    .search-form {
+        width: 100%;
+        margin-bottom: 48px;
+
+        &__input {
+            padding: 15px 120px 15px 23px;
+
+            &:focus {
+                background-color: #e3e4e9;
+                border: 1px solid $blue;
+            }
+        }
+
+        &__btn {
+            padding: 17px 31px;
+            font-size: 15px;
+        }
+    }
+
+    .lnr {
+        padding-right: 10px;
+        color: #fff;
+    }
+
+    &__bottom {
+        background-color: #192027;
+        text-align: center;
+    }
+
+    &__bottom-text {
+        padding: 37px 0;
+        font-size: 15px;
+        color: #999;
+    }
+
+    &__bottom-link {
+        color: #fff;
+        transition: color 0.3s;
+
+        &:hover,
+        &:active {
+            color: $blue;
+        }
+    }
+}
+
+//------------Footer end-------------------
