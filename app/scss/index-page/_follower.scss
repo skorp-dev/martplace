@@ -1,0 +1,77 @@
+.follower {
+    background-color: $grey-bg;
+    padding: 123px 0 78px;
+
+    .slick-arrow {
+        background-color: $blue;
+
+        &:hover,
+        &:focus {
+            background-color: #025fda;
+        }
+    }
+
+    &__slider {
+        margin: 0 -10px;
+        overflow: hidden;
+    }
+
+    .product-item {
+        flex-direction: column;
+        border-radius: 4px;
+        margin-bottom: 34px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+        &__img {
+            width: 100%;
+            height: 230px;
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__links {
+            border-radius: 4px 4px 0 0;
+        }
+
+        &__inner {
+            padding: 25px 30px 14px;
+        }
+
+        &__title {
+            max-width: 300px;
+            font-size: 20px;
+        }
+
+        &__text {
+            max-height: 107px;
+            margin: 0;
+        }
+    }
+
+    .slick-slide {
+        margin: 0 11px;
+    }
+
+    .stats {
+        padding: 0 18px 0 36px;
+        border-radius: 0 0 4px 4px;
+        height: 63px;
+
+        &__price {
+            background-color: #e6f1fd;
+            color: $blue;
+            margin-right: 12px;
+            padding: 6px 13px;
+            display: inline-block;
+        }
+
+        &__features {
+            max-width: 250px;
+            max-height: 30px;
+            overflow: hidden;
+        }
+
+        &__btn {
+            padding: 0;
+        }
+    }
+}

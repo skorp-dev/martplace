@@ -1,0 +1,126 @@
+.feedback {
+    padding: 112px 0 121px;
+
+    &__item {
+        padding: 51px 36px 11px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        border-left: 2px solid $blue;
+        position: relative;
+    }
+
+    &__wrapper {
+        position: relative;
+        margin-bottom: 60px;
+
+        &:hover .feedback__arrows {
+            opacity: 1;
+        }
+    }
+
+    &__arrows {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    &__slider {
+        overflow: hidden;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .slick-slide {
+        margin: 0 20px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .slick-list {
+        margin: 0 -20px;
+    }
+
+    .slick-arrow {
+        padding: 15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        outline: transparent;
+        z-index: 2;
+
+        &:active,
+        &:focus {
+            background-color: #ececec;
+            border: 1px solid #000;
+        }
+
+        &--prev {
+            left: -20px;
+            color: $blue;
+
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+
+        &--next {
+            right: -20px;
+            color: #7347c1;
+
+            &:hover {
+                background-color: #7347c1;
+                color: #fff;
+            }
+        }
+    }
+
+    .lnr-bubble {
+        font-size: 60px;
+        color: #e8e8e8;
+        position: absolute;
+        right: 31px;
+        top: 51px;
+    }
+
+    &__item-top {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    &__user-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__user-content {
+        margin-left: 20px;
+    }
+
+    &__user-name {
+        max-width: 280px;
+        font-size: 20px;
+        display: block;
+        color: #000;
+    }
+
+    &__user-type {
+        line-height: 22px;
+        color: #555;
+    }
+
+    &__item-text {
+        max-height: 140px;
+    }
+}

@@ -1,0 +1,40 @@
+.statistics {
+    background-color: #212225;
+    padding: 94px 0 74px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-size: 36px;
+        text-align: center;
+
+        &--yellow {
+            color: #feb71d;
+        }
+
+        &--blue {
+            color: #58c9e9;
+        }
+
+        &--green {
+            color: #77de51;
+        }
+
+        &--red {
+            color: #ff6a6d;
+        }
+    }
+
+    .lnr {
+        font-size: 48px;
+        padding-bottom: 37px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #fff;
+    }
+}

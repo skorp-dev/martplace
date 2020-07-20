@@ -1,0 +1,92 @@
+.about {
+    padding: 113px 0 95px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 51px 27px 20px;
+        max-width: 360px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        position: relative;
+        margin-bottom: 28px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    &__item-number {
+        font-size: 48px;
+        font-weight: 200;
+        color: rgba(92, 135, 248, 0.2);
+        position: absolute;
+        left: 18px;
+        top: 11px;
+    }
+
+    &__item-title {
+        height: 67px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__item-text {
+        max-height: 140px;
+        margin-top: 0;
+    }
+
+    .lnr {
+        font-size: 60px;
+        margin-bottom: 22px;
+    }
+
+    .lnr-license {
+        color: $blue;
+    }
+
+    .lnr-magic-wand {
+        color: #7f4ec2;
+    }
+
+    .lnr-lock {
+        color: #77de51;
+    }
+
+    .lnr-chart-bars {
+        color: #feb71d;
+    }
+
+    .lnr-leaf {
+        color: #58c9e9;
+    }
+
+    .lnr-phone {
+        color: #ff6a6d;
+    }
+}
+
+.top-block {
+    margin: 0 auto;
+    max-width: 63%;
+    margin-bottom: 53px;
+    text-align: center;
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 22px;
+
+        &--blue {
+            color: $blue;
+        }
+    }
+
+    &__text {
+        line-height: 30px;
+        color: #555;
+    }
+}
