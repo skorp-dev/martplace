@@ -15,7 +15,7 @@
         &--bold {
             display: block;
             margin-bottom: 37px;
-            font-weight: 700;
+            @include fw700;
         }
     }
 

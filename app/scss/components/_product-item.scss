@@ -45,7 +45,7 @@
         border: 1px solid #fff;
         color: #fff;
         font-size: 15px;
-        font-weight: 500;
+        @include fw500;
         background-color: transparent;
         padding: 13px 31px;
         border-radius: 25px;
@@ -157,7 +157,7 @@
         margin-right: 12px;
         padding: 6px 13px;
         border-radius: 19px;
-        font-weight: 500;
+        @include fw500;
         background-color: #e6f1fd;
         color: $blue;
         display: inline-block;
