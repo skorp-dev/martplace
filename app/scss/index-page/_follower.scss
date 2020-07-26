@@ -1,6 +1,6 @@
 .follower {
     background-color: $grey-bg;
-    padding: 120px 0 116px;
+    padding: 122px 0 120px;
 
     .slick-arrow {
         background-color: $blue;
@@ -18,5 +18,9 @@
 
     .slick-slide {
         margin: 0 11px;
+    }
+
+    &__item-text {
+        margin-bottom: 11px;
     }
 }

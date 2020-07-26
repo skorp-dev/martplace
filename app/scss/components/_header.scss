@@ -99,7 +99,7 @@
 
     &__user-name {
         line-height: 22px;
-        @include fw500;
+        font-weight: 500;
         color: #333;
         display: block;
     }
@@ -129,7 +129,7 @@
 
     &__menu-link {
         font-size: 15px;
-        @include fw500;
+        font-weight: 500;
         color: #333;
         transition: color 0.3s;
     }
@@ -139,13 +139,13 @@
     &:active {
         color: $blue;
     }
-}
 
-.search-form {
-    width: 31%;
-    position: relative;
+    &__search {
+        width: 31%;
+        position: relative;
+    }
 
-    &__input {
+    &__search-input {
         width: 100%;
         padding: 13px 80px 13px 23px;
         display: block;
@@ -163,7 +163,7 @@
         }
     }
 
-    &__btn {
+    &__search-btn {
         position: absolute;
         right: 0;
         top: 0;

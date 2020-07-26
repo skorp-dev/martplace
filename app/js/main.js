@@ -4,7 +4,7 @@ $(function () {
         arrows: true,
         prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-        appendArrows: '.top-box__arrows'
+        appendArrows: '.weekly__arrows'
     });
 
     $('.follower__slider').slick({
@@ -44,7 +44,7 @@ $(function () {
         readOnly: true
     });
 
-    $(".rate-star--small").rateYo({
+    $(".rate-star-small").rateYo({
         starWidth: "12px",
         spacing: "3px",
         ratedFill: "#ffc000",

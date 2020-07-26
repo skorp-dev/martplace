@@ -10,7 +10,7 @@ html {
 
 
 body {
-    font-family: 'Quicksand-Regular', 'Linearicons-Free', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -33,7 +33,7 @@ a {
 .rate-star {
     display: inline-block;
 
-    &--small {
+    &-small {
         display: inline-block;
     }
 }
@@ -46,11 +46,31 @@ a {
     &::-webkit-scrollbar {
         background-color: transparent;
         width: 5px;
-
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: $blue;
         border-radius: 30%;
+    }
+}
+
+.title-box {
+    margin: 0 auto;
+    max-width: 63%;
+    margin-bottom: 53px;
+    text-align: center;
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 22px;
+
+        &--blue {
+            color: $blue;
+        }
+    }
+
+    &__text {
+        line-height: 30px;
+        color: #555;
     }
 }

@@ -24,7 +24,7 @@
         position: absolute;
         left: 18px;
         top: 11px;
-    }   
+    }
 
     &__item-title {
         height: 67px;
@@ -67,26 +67,5 @@
 
     .lnr-phone {
         color: #ff6a6d;
-    }
-}
-
-.top-block {
-    margin: 0 auto;
-    max-width: 63%;
-    margin-bottom: 53px;
-    text-align: center;
-
-    &__title {
-        font-size: 36px;
-        margin-bottom: 22px;
-
-        &--blue {
-            color: $blue;
-        }
-    }
-
-    &__text {
-        line-height: 30px;
-        color: #555;
     }
 }

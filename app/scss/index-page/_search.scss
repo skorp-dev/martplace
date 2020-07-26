@@ -15,7 +15,7 @@
         &--bold {
             display: block;
             margin-bottom: 37px;
-            @include fw700;
+            font-weight: 700;
         }
     }
 
@@ -56,7 +56,6 @@
         width: 100%;
         padding: 40px;
         display: flex;
-        justify-content: space-between;
         position: absolute;
         bottom: -65px;
         border-radius: 6px;
@@ -138,16 +137,24 @@
         }
     }
 
+    &__menu-item {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
     &__form-btn {
+        max-width: 223px;
+        width: 100%;
+        height: 54px;
         margin-left: 30px;
-        padding: 17px 64px;
+        padding: 0 15px;
         border: none;
         border-radius: 4px;
         background-color: $blue;
         color: #fff;
         cursor: pointer;
-        outline: transparent;
         transition: background-color 0.5s, color 0.5s;
+        overflow: hidden;
 
         &:hover,
         &:active {
@@ -157,7 +164,6 @@
 
         &:focus {
             background-color: #025fda;
-            border: 1px solid #000;
         }
     }
 }
